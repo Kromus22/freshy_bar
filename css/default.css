@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
+  background: #F8E8E2 url(../img/bg.svg) no-repeat top/contain;
+  color: #000000;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+fieldset {
+  margin: 0;
+}
