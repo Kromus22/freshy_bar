@@ -1,0 +1,42 @@
+.hero {
+  padding: 30px 0 85px 0;
+}
+
+.hero__title {
+  font-size: 84px;
+  font-weight: 900;
+  max-width: 880px;
+}
+
+.hero__cups {
+  display: flex;
+  gap: 20px;
+  padding-top: 270px;
+}
+
+.hero__cup {
+  position: relative;
+  width: 380px;
+  height: 382px;
+  border-radius: 24px;
+}
+
+.hero__cup_pink {
+  background-color: #FF196C;
+}
+
+.hero__cup_orange {
+  background-color: #FFB72A;
+  margin-top: -70px;
+}
+
+.hero__cup_green {
+  background-color: #34B905;
+}
+
+.hero__img {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
