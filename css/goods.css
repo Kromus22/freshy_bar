@@ -37,15 +37,16 @@
 
 .cocktail__text {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 2px;
+  gap: 2px 5px;
+  margin-bottom: 10px;
 }
 
 .cocktail__title {
-  font-size: 18px;
+  font-size: inherit;
   font-weight: 400;
-  margin-right: 5px;
 }
 
 .cocktail__price {
@@ -53,13 +54,75 @@
 }
 
 .cocktail__size {
+  flex: 0 0 100%;
   color: #C1C1C1;
   font-size: 12px;
   font-weight: 600;
-  align-self: flex-end;
-  margin-bottom: 10px;
+  text-align: end;
 }
 
 .cocktail__btn {
   margin-top: auto;
+}
+
+@media (max-width: 1240px) {
+  .goods__list {
+    grid-template-columns: repeat(3, 280px);
+  }
+}
+
+@media (max-width: 940px) {
+  .goods {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .goods__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .goods__list {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+  }
+
+  .cocktail {
+    border-radius: 12px;
+    padding: 8px;
+  }
+
+  .cocktail__img {
+    border-radius: 12px;
+    margin-bottom: 8px;
+  }
+
+  .cocktail__content {
+    padding: 0;
+  }
+
+  .cocktail__text {
+    row-gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .cocktail__title {
+    flex: 0 0 100%;
+  }
+
+  .cocktail__size {
+    flex: auto;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .goods {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .goods__list {
+    gap: 10px;
+  }
 }

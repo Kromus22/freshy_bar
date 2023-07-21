@@ -1,5 +1,5 @@
 .header {
-  padding: 32px 0;
+  padding: 36px 0;
 }
 
 .header__container {
@@ -14,6 +14,36 @@
   gap: 32px;
 }
 
+.header__btn-order {
+  width: 24px;
+  height: 24px;
+}
+
 .header__btn {
   display: block;
+}
+
+@media (max-width: 940px) {
+  .header {
+    padding: 34px 0 20px;
+  }
+
+  .header__btns {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 31px 0;
+  }
+
+  .header__logo {
+    width: 120px;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
 }

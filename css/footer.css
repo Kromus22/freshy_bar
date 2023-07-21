@@ -22,6 +22,7 @@
 .footer__developer {
   grid-area: developer;
   justify-self: end;
+  min-width: 230px;
 }
 
 .footer__developer-item {
@@ -33,3 +34,28 @@
 }
 
 .footer__developer-link {}
+
+@media (max-width: 940px) {
+  .footer {
+    padding-bottom: 24px;
+  }
+
+  .footer__container {
+    gap: 24px;
+  }
+
+  .footer__developer-item {
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__logo {
+    width: 120px;
+  }
+
+  .footer__container {
+    grid-template-areas: 'logo' 'copyright' 'developer';
+    gap: 20px;
+  }
+}
