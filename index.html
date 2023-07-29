@@ -212,7 +212,7 @@
               </label>
 
               <label class="make__label checkbox">
-                <input class="radio__input" type="radio" name="cup" value="Пластиковый">Пластиковый
+                <input class="radio__input" type="radio" name="cup" value="Пластиковый" checked>Пластиковый
                 <span class="make__upsale">(+0 ₽)</span>
               </label>
 
@@ -239,7 +239,7 @@
         <h3 class="make__title">Банановый смузи</h3>
 
         <form class="make__form make__form_add">
-
+          <input class="make__input-title" type="hidden" name="title">
           <div class="make__wrap-add">
             <fieldset class="make__fieldset make__fieldset_topping">
               <legend class="make__legend">Дополнительно:</legend>
@@ -263,7 +263,7 @@
               </label>
 
               <label class="make__label checkbox">
-                <input class="radio__input" type="radio" name="cup" value="Пластиковый">Пластиковый
+                <input class="radio__input" type="radio" name="cup" value="Пластиковый" checked>Пластиковый
                 <span class="make__upsale">(+0 ₽)</span>
               </label>
 
@@ -274,8 +274,13 @@
             <button class="btn make__add-btn" type="submit">Добавить</button>
 
             <div class="make__total">
+              <input class="make__input-start-price" type="hidden">
               <p class="make__total-price text-red">340 ₽</p>
+              <input class="make__input-price" type="hidden" name="price">
+
               <div class="make__total-size">300мл</div>
+              <input class="make__input-size" type="hidden" name="size">
+
             </div>
           </div>
         </form>
