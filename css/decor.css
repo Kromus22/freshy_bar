@@ -1,0 +1,403 @@
+.decor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.decor__img {
+  position: absolute;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.decor__img_01 {
+  width: 223px;
+  height: 214px;
+  background-image: url(../img/decor01.png);
+  filter: drop-shadow(0px 10px 30px rgba(164, 7, 2, 0.50));
+  top: 19%;
+  left: -6%;
+  animation: flying01 1.5s ease-in-out;
+}
+
+.decor__img_02 {
+  width: 180px;
+  height: 147px;
+  background-image: url(../img/decor02.png);
+  filter: drop-shadow(0px 4px 20px rgba(17, 7, 108, 0.50));
+  right: 6%;
+  top: 11%;
+  animation: flying02 1.5s ease-in-out;
+}
+
+.decor__img_03 {
+  width: 46px;
+  height: 41px;
+  background-image: url(../img/decor03.png);
+  filter: drop-shadow(0px 4px 20px rgba(223, 97, 15, 0.40));
+  bottom: 46%;
+  left: 36%;
+  animation: flying03 1.5s ease-in-out;
+}
+
+.decor__img_04 {
+  width: 46px;
+  height: 41px;
+  background-image: url(../img/decor03.png);
+  filter: drop-shadow(0px 4px 20px rgba(223, 97, 15, 0.40));
+  right: 0%;
+  top: 34%;
+  animation: flying04 1.5s ease-in-out;
+}
+
+.decor__img_05 {
+  width: 109px;
+  height: 114px;
+  background-image: url(../img/decor04.png);
+  filter: drop-shadow(0px 4px 20px rgba(1, 30, 82, 0.50));
+  bottom: -5%;
+  left: 27%;
+  animation: flying05 1.5s ease-in-out;
+}
+
+.decor__img_06 {
+  width: 223px;
+  height: 214px;
+  background-image: url(../img/decor01.png);
+  filter: drop-shadow(0px 10px 30px rgba(164, 7, 2, 0.50));
+  transform: scaleX(-1);
+  right: -5%;
+  bottom: -10%;
+  animation: flying06 1.5s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .decor__img_01 {
+    width: 131px;
+    height: 125px;
+    top: 24%;
+    left: 1%;
+    animation: flyingLaptop01 1.5s ease-in-out;
+  }
+
+  .decor__img_02 {
+    width: 122px;
+    height: 99px;
+  }
+
+  .decor__img_03 {
+    width: 34px;
+    height: 30px;
+    bottom: 43%;
+    left: 37%;
+    animation: flyingLaptop03 1.5s ease-in-out;
+  }
+
+  .decor__img_04 {
+    width: 38px;
+    height: 33px;
+  }
+
+  .decor__img_05 {
+    width: 61px;
+    height: 64px;
+    bottom: -2%;
+    left: 29%;
+    animation: flyingLaptop05 1.5s ease-in-out;
+  }
+
+  .decor__img_06 {
+    width: 129px;
+    height: 124px;
+    right: -3%;
+    bottom: -5%;
+    animation: flyingLaptop06 1.5s ease-in-out;
+  }
+}
+
+@media (max-width: 940px) {
+  .decor__img_01 {
+    width: 76px;
+    height: 73px;
+    top: 21%;
+    left: -2%;
+    animation: flyingTablet01 1.5s ease-in-out;
+  }
+
+  .decor__img_02 {
+    width: 72px;
+    height: 58px;
+  }
+
+  .decor__img_03 {
+    width: 25px;
+    height: 23px;
+    bottom: 49%;
+    left: 36%;
+    animation: flyingTablet03 1.5s ease-in-out;
+  }
+
+  .decor__img_04 {
+    width: 22px;
+    height: 19px;
+  }
+
+  .decor__img_05 {
+    width: 41px;
+    height: 44px;
+    left: 28%;
+    animation: flyingTablet05 1.5s ease-in-out;
+  }
+
+  .decor__img_06 {
+    width: 96px;
+    height: 93px;
+    right: -5%;
+    bottom: -11%;
+    animation: flyingTablet06 1.5s ease-in-out;
+  }
+}
+
+@media (max-width: 640px) {
+  .decor__img_01 {
+    width: 76px;
+    height: 73px;
+    top: 99%;
+    left: 3%;
+    animation: flyingMobile01 1.5s ease-in-out;
+  }
+
+  .decor__img_02 {
+    width: 62px;
+    height: 50px;
+    top: 78%;
+    right: 0%;
+    animation: flyingMobile02 1.5s ease-in-out;
+  }
+
+  .decor__img_03 {
+    width: 25px;
+    height: 23px;
+    bottom: -30%;
+    left: 56%;
+    animation: flyingMobile03 1.5s ease-in-out;
+  }
+
+  .decor__img_04 {
+    display: none;
+  }
+
+  .decor__img_05 {
+    display: none;
+  }
+
+  .decor__img_06 {
+    display: none;
+  }
+}
+
+@keyframes flying01 {
+  0% {
+    top: -100%;
+    left: -100%;
+  }
+
+  100% {
+    top: 19%;
+    left: -6%;
+  }
+}
+
+@keyframes flying02 {
+  0% {
+    right: -100%;
+    top: -100%;
+  }
+
+  100% {
+    right: 6%;
+    top: 11%;
+  }
+}
+
+@keyframes flying03 {
+  0% {
+    left: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: 46%;
+    left: 36%;
+  }
+}
+
+@keyframes flying04 {
+  0% {
+    right: -100%;
+    top: -100%;
+  }
+
+  100% {
+    right: 0%;
+    top: 34%;
+  }
+}
+
+@keyframes flying05 {
+  0% {
+    left: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: -5%;
+    left: 27%;
+  }
+}
+
+@keyframes flying06 {
+  0% {
+    right: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    right: -5%;
+    bottom: -10%;
+  }
+}
+
+@keyframes flyingLaptop01 {
+  0% {
+    top: -100%;
+    left: -100%;
+  }
+
+  100% {
+    top: 24%;
+    left: 1%;
+  }
+}
+
+@keyframes flyingLaptop03 {
+  0% {
+    left: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: 43%;
+    left: 37%;
+  }
+}
+
+@keyframes flyingLaptop05 {
+  0% {
+    left: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: -2%;
+    left: 29%;
+  }
+}
+
+@keyframes flyingLaptop06 {
+  0% {
+    right: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    right: -3%;
+    bottom: -5%;
+  }
+}
+
+@keyframes flyingTablet01 {
+  0% {
+    top: -100%;
+    left: -100%;
+  }
+
+  100% {
+    top: 21%;
+    left: -2%;
+  }
+}
+
+@keyframes flyingTablet03 {
+  0% {
+    left: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: 49%;
+    left: 36%;
+  }
+}
+
+@keyframes flyingTablet05 {
+  0% {
+    left: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: -2%;
+    left: 28%;
+  }
+}
+
+@keyframes flyingTablet06 {
+  0% {
+    right: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    right: -5%;
+    bottom: -11%;
+  }
+}
+
+@keyframes flyingMobile01 {
+  0% {
+    top: -100%;
+    left: -100%;
+  }
+
+  100% {
+    top: 99%;
+    left: 3%;
+  }
+}
+
+@keyframes flyingMobile02 {
+  0% {
+    right: -100%;
+    top: -100%;
+  }
+
+  100% {
+    top: 78%;
+    right: 0%;
+  }
+}
+
+@keyframes flyingMobile03 {
+  0% {
+    left: -100%;
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: -30%;
+    left: 56%;
+  }
+}

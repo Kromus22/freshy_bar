@@ -2,6 +2,10 @@
   padding: 30px 0 85px 0;
 }
 
+.hero__container {
+  position: relative;
+}
+
 .hero__title {
   font-size: 84px;
   font-weight: 900;
@@ -82,8 +86,13 @@
     border-radius: 12px;
   }
 
+  .hero__cup_orange {
+    margin-top: -35px;
+  }
+
   .hero__img {
-    bottom: 10%;
+    bottom: 9%;
+    width: 60%;
   }
 }
 
